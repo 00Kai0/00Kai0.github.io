@@ -126,5 +126,5 @@ if b'rsaEncryption' in sigAlg or b'RSAEncryption' in sigAlg:
 
 以上是我对支付宝公钥证书验证的大致理解，最后的算法类型也是我的猜测，有问题可以告诉我哦。这么看起来不是特别困难的问题，但是在解决问题的过程中的确花了很多时间，网络上能提供的资料也只有支付宝官网的文档和上面
 的一个php实现的博客。解决完让我豁然开朗，也希望还在炮坑的同学能从中受益。   
-目前我是在[alipay](https://github.com/fzlee/alipay) ( 我觉得做的还可以 )基础上加入了证书签名。如果以后有时间我希望可以计划制作一个更好用的 SDK。   
+目前我是在[alipay](https://github.com/fzlee/alipay) ( 我觉得做的还可以 )基础上加入了证书签名。需要的朋友可以直接下载。   
 完整 Demo 的地址：https://github.com/00Kai0/pyAliPay/blob/master/demo.py
