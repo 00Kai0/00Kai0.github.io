@@ -104,7 +104,7 @@ main:
         movl    %eax, %esi        # esi = eax
         leaq    .LC0(%rip), %rdi  # rdi = "result: %d\n"
         movl    $0, %eax          # eax = 0
-        call    printf@PLT        # printf(rdi, exa);
+        call    printf@PLT        # printf(rdi, esi);
         movl    $0, %eax          # eax = 0
         leave
         .cfi_def_cfa 7, 8
@@ -152,7 +152,7 @@ main:
 
 下面是 `while` 的表达, 上面初始化数据以后, 使用 `jmp` 命令可以跳到指定的代码段, 对应 C 语言中的 `goto` 语句。然后是 `cmp` 命令判断条件是否达成, 达成则 goto 到 L3 代码段。这里需要使用 RIP 寻址从 static 内存段中读取全局变量 step 的值。后边的 `addl` 就是对指定变量做加法了。
 
-最后再来看一下 printf 的函数调用, 64位系统中增加了很多个通用寄存器, 这里 printf 的参数就直接加载到 `rdi` 和 `eax` 寄存器里调用。还有一种调用方式在 32 位系统中比较常见, 32位系统一共就 8 个通用寄存器, 于是就把参数压入栈中调用, 取参数时还是按照偏移量取, 像这样:
+最后再来看一下 printf 的函数调用, 64位系统中增加了很多个通用寄存器, 这里 printf 的参数就直接加载到 `rdi` 和 `esi` 寄存器里调用。还有一种调用方式在 32 位系统中比较常见, 32位系统一共就 8 个通用寄存器, 于是就把参数压入栈中调用, 取参数时还是按照偏移量取, 像这样:
 ```
 |----|
 |----| <- printf 的 rsp 栈顶
