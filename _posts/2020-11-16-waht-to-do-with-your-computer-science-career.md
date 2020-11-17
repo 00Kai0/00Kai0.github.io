@@ -24,6 +24,6 @@ categories:
 (关于 AI 是否会让人类开发者显得多余的问题，不是我如何看待把 AI 当成职业选择的问题)
 关于人工智能，我一点也不担心。这个领域聚焦于自动化像开车和人脸识别这种无聊的，重复的任务。这些任务人类可以轻松学会但如果一直做就会觉得无聊枯燥。软件工程领域包括AI从来都不是枯燥无味的，因为只要一个环节是重复的，你就让他自动化并着手解决新的问题。
 
-原作者：Guido van Rossum
-翻译转载：Kerwin Sun
+原作者：Guido van Rossum   
+翻译转载：Kerwin Sun   
 原文地址：http://neopythonic.blogspot.com/2018/11/what-do-do-with-your-computer-science.html
