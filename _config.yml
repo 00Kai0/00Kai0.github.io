@@ -1,6 +1,6 @@
 # Site settings
-title: Kerwin Sun - Developer for fun
-description: "A blog about a normal coder"
+title: Kerwin Sun - Coding for fun
+description: "Just want to code for fun and show my life"
 baseurl: "" # "/space-jekyll-template" # for test: remove string '/space-jekyll-template' to ''
 url: "http://00Kai0.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.github.io'
 
